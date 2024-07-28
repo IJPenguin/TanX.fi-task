@@ -76,6 +76,24 @@ def top_10_customers_by_revenue(data: pd.DataFrame) -> pd.Series:
     top_customers = revenue_per_customer.nlargest(10)
     return top_customers
 
+def top_10_customers_by_revenue(data: pd.DataFrame) -> pd.Series:
+    """
+    Identifies the top 10 customers by revenue generated.
+
+    Parameters:
+    data (pd.DataFrame): The input data.
+
+    Returns:
+    pd.Series: Top 10 customers by revenue.
+    """
+    revenue_per_customer = compute_total_revenue_per_customer(data)
+    if revenue_per_customer.empty:
+        return pd.Series(dtype='float64')
+    revenue_per_customer = revenue_per_customer.astype(float)
+    top_customers = revenue_per_customer.nlargest(10)
+    return top_customers
+
+
 def main(file_path: str) -> None:
     """
     Main function to execute the tasks.
