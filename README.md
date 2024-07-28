@@ -41,7 +41,8 @@ This application processes customer orders data and provides various insights su
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/IJPenguin/TanX.fi-task.git cd TanX.fi-task
+git clone https://github.com/IJPenguin/TanX.fi-task.git
+cd TanX.fi-task
 ```
 
 2. **Build and run the containers**:
@@ -61,7 +62,8 @@ docker-compose run test
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/IJPenguin/TanX.fi-task.git cd TanX.fi-task
+git clone https://github.com/IJPenguin/TanX.fi-task.git
+cd TanX.fi-task
 ```
 
 2. **Build the application image**:
