@@ -3,9 +3,10 @@
 This application processes customer orders data and provides various insights such as total revenue per month, revenue per product, and more. The project uses Docker and Docker Compose to manage the application and testing environments.
 
 ## Project Structure
+
 ```
 .
-├── .dockerignore 
+├── .dockerignore
 ├── .gitignore
 ├── app.py
 ├── docker-compose.yml
@@ -35,7 +36,7 @@ This application processes customer orders data and provides various insights su
 
 ## Setup
 
-1. **Clone the repository**: `sh git clone <repository_url> cd <repository_directory>`
+1. **Clone the repository**: `git clone https://github.com/IJPenguin/TanX.fi-task.git cd TanX.fi-task`
 2. **Build and run the containers**: `docker-compose up --build`
 3. **Run the tests**: `docker-compose run test`
 
