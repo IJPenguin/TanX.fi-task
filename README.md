@@ -3,9 +3,9 @@
 This application processes customer orders data and provides various insights such as total revenue per month, revenue per product, and more. The project uses Docker and Docker Compose to manage the application and testing environments.
 
 ## Project Structure
-
+```
 .
-├── .dockerignore
+├── .dockerignore 
 ├── .gitignore
 ├── app.py
 ├── docker-compose.yml
@@ -16,6 +16,7 @@ This application processes customer orders data and provides various insights su
 ├── README.md
 ├── requirements.txt
 └── test.py
+```
 
 ## Files
 
