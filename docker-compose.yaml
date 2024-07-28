@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python app.py
+    volumes:
+      - .:/app
+
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    command: pytest test.py
+    volumes:
+      - .:/app
