@@ -94,4 +94,4 @@ def main(file_path: str) -> None:
     print(top_10_customers_by_revenue(data))
 
 if __name__ == "__main__":
-    main('orders.csv')
+    main('orders-1.csv')
