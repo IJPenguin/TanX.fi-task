@@ -132,16 +132,10 @@ docker run -d -p 4000:80 tanx-fi-app
 
 To run the tests:
 
-````bash
+```bash
 docker run tanx-fi-test
 ```
 
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-````
-
-```
-
-```
