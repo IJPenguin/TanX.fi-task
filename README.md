@@ -36,9 +36,19 @@ This application processes customer orders data and provides various insights su
 
 ## Setup
 
+### Using Docker Compose
+
 1. **Clone the repository**: `git clone https://github.com/IJPenguin/TanX.fi-task.git cd TanX.fi-task`
 2. **Build and run the containers**: `docker-compose up --build`
 3. **Run the tests**: `docker-compose run test`
+
+### Using Standalone Docker Commands
+
+1. **Clone the repository**: `git clone https://github.com/IJPenguin/TanX.fi-task.git cd TanX.fi-task`
+2. **Build the application image**: `docker build -t tanx-fi-app .`
+3. **Run the application container**: `docker run -d -p 4000:80 tanx-fi-app`
+4. **Build the test image**: `docker build -t tanx-fi-test -f Dockerfile.test .`
+5. **Run the test container**: `docker run tanx-fi-test`
 
 ## Functions
 
@@ -60,8 +70,15 @@ This function returns the top 10 customers by revenue.
 
 ## Usage
 
+### Using Docker Compose
+
 To run the application: `docker-compose up`
 To run the tests: `docker-compose run test`
+
+### Using Standalone Docker Commands
+
+To run the application: `docker run -d -p 4000:80 tanx-fi-app`
+To run the tests: `docker run tanx-fi-test`
 
 ## License
 
